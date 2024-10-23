@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fafafa; /* Fond léger et neutre */
+  color: #2c3e50; /* Couleur du texte */
+}
+
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff; /* Fond blanc pour le conteneur principal */
+  border-radius: 10px; /* Coins arrondis */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Ombre portée */
+}
+
+.app-name {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #e67e22; /* Couleur orange */
+}
+
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.city-search {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #e67e22; /* Couleur de la bordure */
+  border-radius: 5px;
+  font-size: 1em;
+  transition: border-color 0.3s;
+}
+
+.city-search:focus {
+  border-color: #d35400; /* Couleur au focus */
+  outline: none;
+}
+
+.error-message {
+  color: #c0392b; /* Couleur d'erreur */
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.forecast {
+  margin-top: 20px;
+}
+
+.forecast-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.forecast-day {
+  background-color: #fceba7; /* Couleur de fond pour les prévisions */
+  border: 1px solid #e67e22; /* Bordure orange */
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px 0; /* Espacement entre les cartes */
+  flex: 1 1 180px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.forecast-day:hover {
+  transform: translateY(-3px); /* Légère élévation au survol */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre portée */
+}
+
+.forecast-day img {
+  width: 50px;
+}
+
+h2, h3 {
+  margin: 10px 0;
+  color: #e67e22; /* Couleur des titres */
+}
+
+button {
+  background-color: #2980b9; /* Couleur bleue pour les boutons */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3498db; /* Couleur au survol */
+}
+
+.favorite-cities {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.favorite-city {
+  background-color: #dff9e8; /* Couleur douce pour les villes favorites */
+  border: 1px solid #e67e22;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.favorite-city:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.favorite-city span {
+  cursor: pointer;
+  color: #e67e22; /* Couleur du texte pour les villes */
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.favorite-city span:hover {
+  color: #d35400; /* Couleur au survol */
+}
+
+.favorite-city button {
+  background-color: #e74c3c; /* Rouge pour le bouton de suppression */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.favorite-city button:hover {
+  background-color: #c0392b; /* Couleur au survol */
+}
+
+.favorite-city button:focus {
+  outline: none;
+}
+
+
+#btn{
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+#btn:hover {
+  background-color: white;
+  color: red;
+}
+
+#a{
+  display: inline;
+ 
+}
+#b{
+  font-size: larger;
+margin: 20px;
+}
